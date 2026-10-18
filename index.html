@@ -29,7 +29,7 @@ button:hover{background:rgba(255,255,255,.14)}button.on{background:#e8d9a8;color
 #menu{position:fixed;left:16px;bottom:calc(76px + env(safe-area-inset-bottom,0px));background:var(--pan);border:1px solid var(--bd);border-radius:12px;padding:8px;display:none;z-index:12;backdrop-filter:blur(10px)}
 #menu.on{display:block}#menu div{padding:6px 12px;font-size:14px;border-radius:8px;cursor:pointer}#menu div:hover{background:#fff2}
 #start{position:fixed;inset:0;z-index:20;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;padding:24px;transition:opacity 3.5s}
-#start h1{font-size:clamp(44px,11vw,130px);margin:0;font-weight:800;letter-spacing:-.03em;line-height:1.05;min-height:1.2em;transition:opacity .5s}#start p.cred{position:absolute;left:0;right:0;bottom:calc(28px + env(safe-area-inset-bottom,0px));margin:0;color:var(--mut);font-size:15px;line-height:1.6;letter-spacing:.04em}#start p.cred b{color:var(--fg);font-weight:600}
+#start h1{font-size:clamp(44px,11vw,130px);margin:0;font-weight:800;letter-spacing:-.03em;line-height:1.05;min-height:1.2em;transition:opacity .5s}#start p.cred{position:absolute;left:0;right:0;bottom:calc(28px + env(safe-area-inset-bottom,0px));margin:0;color:var(--mut);font-size:15px;line-height:1.6;letter-spacing:.04em}#start p.cred b{color:var(--fg);font-weight:600}#start .lg{position:absolute;bottom:calc(24px + env(safe-area-inset-bottom,0px));height:38px;max-width:28vw;object-fit:contain;opacity:.5}#start .lg.l{left:22px}#start .lg.r{right:22px}@media(max-width:700px){#start .lg{height:28px}}
 #start button{font-size:16px;padding:12px 28px;background:#e8d9a8;color:#111;border:0}
 #resume{display:none}body.pres .sec{display:none!important}body.pres #cap{bottom:24px}
 @media(max-width:700px){#pan{top:auto;bottom:calc(150px + env(safe-area-inset-bottom,0px));right:8px;left:8px;width:auto;max-height:34vh;overflow:auto}.fl{font-size:16px}#cap{bottom:calc(76px + env(safe-area-inset-bottom,0px));font-size:13px}#hero,#hero2{bottom:40vh}.ttl{font-size:12px}}
@@ -49,7 +49,7 @@ button:hover{background:rgba(255,255,255,.14)}button.on{background:#e8d9a8;color
 <div class="bar" id="bot"><button id="bPrev">◀ Anterior</button><button id="bPlay">▶ Reproduzir</button><button id="bNext">Seguinte ▶</button><div id="segs"></div>
 <button id="bMenu" class="sec">Cenas</button><button id="resume">⟲ Retomar apresentação</button>
 <span class="sec" style="display:contents"><button id="bGrid" class="on">Grelha</button><button id="bMath" class="on">Pontos e retas</button><button id="bView">Vista aérea</button><button id="bReset">Repor vista</button></span></div>
-<div id="start"><h1 id="lang" lang="pt">Matemática</h1><button id="go">Começar</button><p class="cred"><b>Bruno e Isis</b><br>11ºAud e As</p></div>
+<div id="start"><h1 id="lang" lang="pt">Matemática</h1><button id="go">Começar</button><p class="cred"><b>Bruno e Isis</b><br>11ºAud e As</p><img class="lg l" alt="" src="https://res.cloudinary.com/dpodm97yf/image/upload/v1779135063/imagem_2026-05-18_211102116_ffbkgu.png" onerror="this.style.display='none'"><img class="lg r" alt="" src="https://res.cloudinary.com/dpodm97yf/image/upload/v1779134866/image-removebg-preview_13_ntf29v.png" onerror="this.style.display='none'"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
